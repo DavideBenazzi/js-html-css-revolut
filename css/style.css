@@ -18,6 +18,7 @@ h3 {
 a {
   text-decoration: none;
   color: #a1a6ad;
+  font-weight: 700;
 }
 a:hover,
 a:active {
@@ -89,8 +90,8 @@ a:active {
 .nuovo::after {
   content: "Nuovo";
   position: absolute;
-  top: -100%;
-  right: 40%;
+  top: 0;
+  right: 55%;
   font-size: 12px;
   font-weight: 700;
   color: #d8338b;
@@ -98,8 +99,8 @@ a:active {
 .beta::after {
   content: "Beta";
   position: absolute;
-  top: -100%;
-  right: 40%;
+  top: 0;
+  right: 70%;
   font-size: 12px;
   font-weight: 700;
   color: #d8338b;
