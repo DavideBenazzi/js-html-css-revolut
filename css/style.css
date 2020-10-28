@@ -3,15 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-
 li {
   list-style: none;
   display: inline-block;
+  padding: 10px 15px;
 }
 /* UTILITY */
 .flex {
@@ -22,6 +21,19 @@ li {
   flex-direction: column;
 }
 /* HEADER */
+.navigazione {
+  justify-content: space-between;
+  align-items: center;
+}
 .navigazione .sinistra img {
   width: 200px;
+}
+/* MENU DESTRA */
+.navigazione .destra .with-dropdown {
+  position: relative;
+}
+.navigazione .destra .dropdown-menu {
+  position: absolute;
+  display: none;
+
 }
