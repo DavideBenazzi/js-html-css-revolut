@@ -12,6 +12,9 @@ li {
   display: inline-block;
   padding: 10px 15px;
 }
+h3 {
+  display: inline-block;
+}
 a {
   text-decoration: none;
   color: #a1a6ad;
@@ -63,6 +66,20 @@ a:active {
 }
 .navigazione .destra .dropdown-menu li {
   display: block;
+}
+.navigazione .destra i {
+  transform: translateY(20%);
+}
+.navigazione .destra .button a {
+  background: #d8338b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: opacity 0.4s;
+}
+.navigazione .destra .button a:hover {
+  opacity: 0.5;
 }
 /* PSEUDOELEMENTI */
 .navigazione .destra .dropdown-menu .nuovo,
