@@ -12,6 +12,14 @@ li {
   display: inline-block;
   padding: 10px 15px;
 }
+a {
+  text-decoration: none;
+  color: #a1a6ad;
+}
+a:hover,
+a:active {
+  color: #000;
+}
 /* UTILITY */
 .flex {
   display: flex;
@@ -20,20 +28,62 @@ li {
   display: flex;
   flex-direction: column;
 }
+.align-center {
+  align-items: center;
+}
 /* HEADER */
 .navigazione {
   justify-content: space-between;
   align-items: center;
 }
+/* MENU SINISTRA */
+.navigazione .sinistra {
+  height: 100px;
+  align-items: center;
+}
 .navigazione .sinistra img {
-  width: 200px;
+  width: 150px;
 }
 /* MENU DESTRA */
+.navigazione .destra {
+  height: 100px;
+  align-items: center;
+}
 .navigazione .destra .with-dropdown {
   position: relative;
 }
 .navigazione .destra .dropdown-menu {
   position: absolute;
+  top: 50px;
+  right: -100%;
   display: none;
-
+  width: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.navigazione .destra .dropdown-menu li {
+  display: block;
+}
+/* PSEUDOELEMENTI */
+.navigazione .destra .dropdown-menu .nuovo,
+.navigazione .destra .dropdown-menu .beta {
+  position: relative;
+}
+.nuovo::after {
+  content: "Nuovo";
+  position: absolute;
+  top: -100%;
+  right: 40%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d8338b;
+}
+.beta::after {
+  content: "Beta";
+  position: absolute;
+  top: -100%;
+  right: 40%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #d8338b;
 }
